@@ -1,0 +1,113 @@
+.grid-container{
+    display:grid;
+    grid-template-columns: 1fr;
+}
+
+
+.rainbow{
+    position:relative;
+    top:-1720px;
+    right:80px;
+    animation-name: blink1, blink2;
+    animation-delay: 0s, 3s;
+    animation-iteration-count: 3, 1;
+    animation-duration:1s, 3s;
+
+}
+
+
+
+@keyframes blink2{
+    0%{
+        opacity: .2;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes blink1 {
+
+    0% {
+        opacity: 0;
+    }
+    5%{
+        opacity: 1;
+    }
+
+    7% {
+        opacity: 0;
+    }
+    10%{
+        opacity: 1;
+    }
+    15%{
+        opacity: .2;
+    }
+
+    25%{
+        opacity: .6;
+    }
+
+    30%{
+        opacity: .3;
+    }
+    40%{
+        opacity: .5;
+    }
+    50% {
+        opacity: .8;
+    }
+    60% {
+        opacity: .7;
+    }
+    70%{
+        opacity: .4;
+    }
+    80%{
+        opacity: .8;
+    }
+    90%{
+        opacity: .3;
+    }
+    100%{
+        opacity: .2;
+    }
+
+  }
+
+
+
+
+
+@-webkit-keyframes mymove {
+
+    0%{
+        transform: rotate(0deg)
+
+    }
+
+
+    100%{
+        transform: rotate(359deg)
+    }
+
+
+  }
+
+  .left_circle{
+    position: relative;
+    -webkit-animation: mymove 2.5s infinite linear;
+    transform-origin: center;
+    top: -800px;
+    right: -400px;
+  
+  }
+
+  .right_circle{
+      top: -1000px;
+      right: -150px;
+      position:relative;
+     -webkit-animation: mymove 2s infinite linear;
+      transform-origin: center;
+  }
